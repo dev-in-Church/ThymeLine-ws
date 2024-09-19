@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Checkout</title>
+
+    <!-- This code is needed for responsive design to work.
+      (Responsive design = make the website look good on
+      smaller screen sizes like a phone or a tablet). -->
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <link rel="stylesheet" href="assets/css/font-awesome.css" />
+    <!--link rel="stylesheet" href="assets/css/bootstrap.min.css" /-->
+    <link rel="stylesheet" href="gen-styles.css" />
+  </head>
+  <body class="checkout-body">
+    <section id="header">
+      <a href="home.html">
+        <div class="logo-div">
+          <p>ThymeLine</p>
+          <img src="img/icons/timer-outline.svg" alt="" class="logo" />
+        </div>
+      </a>
+
+      <div class="nav-div">
+        <div id="navbar" class="js-navbar navbar-s">
+          <a href="home.html"><li>Home</li></a>
+          <a href="shop.html"><li>Shop</li></a>
+          <!--li><a href="blog.html">Blog</a></li-->
+          <!--li><a href="about.html">About</a></li-->
+          <!--li><a href="contact.html">Contact</a></li-->
+          <a class="active" href="checkout.html">
+            <li>
+              <!--a href="trolley.html"-->
+              <div class="trolley-div">
+                Trolley
+                <img
+                  src="img/icons/trolley-outline.svg"
+                  class="trolley-img"
+                  alt=""
+                />
+                <div class="count js-count">0</div>
+              </div>
+              <!--/a-->
+            </li>
+          </a>
+        </div>
+        <div class="far-imgs">
+          <img src="img/icons/qr-code-sharp.svg" class="qrcode-img" />
+          <img src="img/icons/menu.png" class="menu-icon js-menu-icon" />
+        </div>
+      </div>
+    </section>
+    <div class="main">
+      <div class="page-title">Verify Your Shopping Here &darr;</div>
+
+      <div class="checkout-grid">
+        <div class="order-summary js-trolley"></div>
+        <div class="payment-summary js-payment-summary"></div>
+      </div>
+    </div>
+
+    <!--footer-->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-3">
+            <div class="first-item">
+              <div class="logo">
+                <div>ThymeLine</div>
+              </div>
+              <ul>
+                <li>
+                  <a href="#">16501 Britam Towers, FL 33160, Nairobi, Kenya</a>
+                </li>
+                <li><a href="#">ThymeLine@company.com</a></li>
+                <li><a href="#">079-519-8141</a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-3">
+            <h4>Shopping &amp; Categories</h4>
+            <ul>
+              <li><a href="#">Men’s Shopping</a></li>
+              <li><a href="#">Women’s Shopping</a></li>
+              <li><a href="#">Kid's Shopping</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Homepage</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="col-lg-3">
+            <h4>Help &amp; Information</h4>
+            <ul>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">FAQ's</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Tracking ID</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="under-footer">
+          <p>
+            Copyright © 2024 ThymeLine Co. Ltd. All Rights Reserved.
+
+            <br />Creator &amp; Designer:
+            <a href="" target="_parent" title="">Emmanuel_IT</a>
+          </p>
+          <ul>
+            <li>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-behance"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <script type="module" src="functs/checkout.js"></script>
+  </body>
+</html>

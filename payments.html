@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Payments</title>
+    <link rel="stylesheet" href="gen-styles.css" />
+  </head>
+  <body>
+    <section id="header">
+      <a href="home.html">
+        <div class="logo-div">
+          <p>ThymeLine</p>
+          <img src="img/icons/timer-outline.svg" alt="" class="logo" />
+        </div>
+      </a>
+
+      <div class="nav-div">
+        <ul id="navbar" class="js-navbar navbar-s">
+          <a href="home.html"><li>Home</li></a>
+          <a href="shop.html"><li>Shop</li></a>
+          <!--li><a href="blog.html">Blog</a></li-->
+          <!--li><a href="about.html">About</a></li-->
+          <!--li><a href="contact.html">Contact</a></li-->
+          <a href="checkout.html">
+            <li>
+              <!--a href="trolley.html"-->
+              <div class="trolley-div">
+                Trolley
+                <img
+                  src="img/icons/trolley-outline.svg"
+                  class="trolley-img"
+                  alt=""
+                />
+                <div class="count js-count">0</div>
+              </div>
+              <!--/a-->
+            </li>
+          </a>
+        </ul>
+        <div class="far-imgs">
+          <img src="img/icons/qr-code-sharp.svg" class="qrcode-img" />
+          <img src="img/icons/menu.png" class="menu-icon js-menu-icon" />
+        </div>
+      </div>
+    </section>
+    <section class="pay-container">
+      <form action="">
+        <div class="pay-row">
+          <div class="pay-col">
+            <h3 class="title">billing address</h3>
+            <div class="inputBox">
+              <span>full name :</span>
+              <input required type="text" placeholder="Firstname Secondname" />
+            </div>
+            <div class="inputBox">
+              <span>email :</span>
+              <input required type="email" placeholder="name@example.com" />
+            </div>
+            <div class="inputBox">
+              <span>address :</span>
+              <input
+                required
+                type="text"
+                placeholder="room - street - locality"
+              />
+            </div>
+            <div class="inputBox">
+              <span>city :</span>
+              <input required type="text" placeholder="Kakamega" />
+            </div>
+            <div class="flex">
+              <div class="inputBox">
+                <span>state :</span>
+                <input required type="text" placeholder="Kenya" />
+              </div>
+              <div class="inputBox">
+                <span>zip code :</span>
+                <input required type="text" placeholder="123 456" />
+              </div>
+            </div>
+          </div>
+          <div class="pay-col">
+            <h3 class="title">payment</h3>
+            <div class="inputBox">
+              <span>accepted cards :</span>
+              <div class="cards-img">
+                <img src="img/payments/1.png" alt="" />
+                <img src="img/payments/2.png" alt="" />
+                <img src="img/payments/3.png" alt="" />
+                <img src="img/payments/5.png" alt="" />
+              </div>
+            </div>
+            <div class="inputBox">
+              <span>name on card :</span>
+              <input required type="text" placeholder="Firstname Secondname" />
+            </div>
+            <div class="inputBox">
+              <span>credit card number :</span>
+              <input required type="number" placeholder="1111-2222-3333-4444" />
+            </div>
+            <div class="inputBox">
+              <span>exp month :</span>
+              <input required type="text" placeholder="june" />
+            </div>
+            <div class="flex">
+              <div class="inputBox">
+                <span>exp year :</span>
+                <input required type="text" placeholder="2024" />
+              </div>
+              <div class="inputBox">
+                <span>CVV:</span>
+                <input required type="text" placeholder="1234" />
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <button id="submit" class="submit-btn" type="submit">Finish</button>
+
+        <!--a href="qrcode.html">
+          <button class="place-order-button">QRCode</button>
+        </a-->
+      </form>
+    </section>
+    <script type="module" src="functs/payment.js"></script>
+  </body>
+</html>

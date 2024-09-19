@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>qrcode</title>
+    <link rel="stylesheet" href="gen-styles.css" />
+    <script src="tech/qrcode.min.js"></script>
+  </head>
+  <body>
+    <section id="header">
+      <a href="home.html">
+        <div class="logo-div">
+          <p>ThymeLine</p>
+          <img src="img/icons/timer-outline.svg" alt="" class="logo" />
+        </div>
+      </a>
+
+      <div class="nav-div">
+        <ul id="navbar" class="js-navbar navbar-s">
+          <a href="home.html"><li>Home</li></a>
+          <a href="shop.html"><li>Shop</li></a>
+          <!--li><a href="blog.html">Blog</a></li-->
+          <!--li><a href="about.html">About</a></li-->
+          <!--li><a href="contact.html">Contact</a></li-->
+          <a class="active" href="checkout.html">
+            <li>
+              <!--a href="trolley.html"-->
+              <div class="trolley-div">
+                Trolley
+                <img
+                  src="img/icons/trolley-outline.svg"
+                  class="trolley-img"
+                  alt=""
+                />
+                <div class="count js-count">0</div>
+              </div>
+              <!--/a-->
+            </li>
+          </a>
+        </ul>
+        <div class="far-imgs">
+          <img src="img/icons/qr-code-sharp.svg" class="qrcode-img" />
+          <img src="img/icons/menu.png" class="menu-icon js-menu-icon" />
+        </div>
+      </div>
+    </section>
+    <div class="qr-main">
+      <div class="qr-box">
+        <div class="form">
+          <input type="text" id="nameC" placeholder="Enter first name" />
+          <button id="gen-btn">Get QR Code</button>
+        </div>
+        <div class="qr-div">
+          <div id="qrcode"></div>
+        </div>
+        <div class="save">
+          <button id="pay">Continue to payments</button>
+        </div>
+      </div>
+    </div>
+    <script type="module" src="functs/QRCodes/qrPage.js"></script>
+  </body>
+</html>

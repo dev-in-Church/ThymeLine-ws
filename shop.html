@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ThymeLine_shop</title>
+
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css" />
+    <link rel="stylesheet" href="gen-styles.css" />
+  </head>
+  <body>
+    <section id="header">
+      <a href="home.html">
+        <div class="logo-div shop-logo-div">
+          <p>ThymeLine</p>
+          <img src="img/icons/timer-outline.svg" alt="" class="logo" />
+        </div>
+      </a>
+
+      <div class="search-div">
+        <input type="text" placeholder="Search Items " />
+        <img class="search-icon" src="img/icons/search.svg" alt="" />
+      </div>
+
+      <div class="nav-div">
+        <div id="navbar" class="js-navbar navbar-s">
+          <a href="home.html"><li>Home</li></a>
+          <a class="active" href="shop.html"><li>Shop</li></a>
+          <!--li><a href="blog.html">Blog</a></li-->
+          <!--li><a href="about.html">About</a></li-->
+          <!--li><a href="contact.html">Contact</a></li-->
+          <a href="checkout.html">
+            <li>
+              <!--a href="trolley.html"-->
+              <div class="trolley-div">
+                Trolley
+                <img
+                  src="img/icons/trolley-outline.svg"
+                  class="trolley-img"
+                  alt=""
+                />
+                <div class="count js-count">0</div>
+              </div>
+              <!--/a-->
+            </li>
+          </a>
+        </div>
+        <div class="far-imgs">
+          <img src="img/icons/qr-code-sharp.svg" class="qrcode-img" />
+          <img src="img/icons/menu.png" class="menu-icon js-menu-icon" />
+        </div>
+      </div>
+    </section>
+
+    <!--sidebarsssssss-->
+    <div class="sidebar">
+      <div class="s-bar-close-div">
+        <i class="s-b-close fa fa-arrow-left"></i>
+      </div>
+      <div class="codes-grid"></div>
+    </div>
+    <!--sidebarsssssss end-->
+
+    <section class="productsList js-productsList"></section>
+
+    <script type="module" src="functs/shop.js"></script>
+  </body>
+</html>
