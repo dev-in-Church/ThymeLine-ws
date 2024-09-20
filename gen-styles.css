@@ -409,11 +409,19 @@ body {
   .f-container {
     grid-template-columns: repeat(2, 1fr);
   }
+
+  .f-img {
+    height: 60px;
+  }
 }
 
 @media (max-width: 768px) {
   .f-container {
     grid-template-columns: repeat(3, 1fr);
+  }
+
+  .f-img {
+    height: 70px;
   }
 }
 
@@ -421,19 +429,22 @@ body {
   .f-container {
     grid-template-columns: repeat(4, 1fr);
   }
+
+  .f-img {
+    height: 80px;
+  }
 }
 
 @media (max-width: 1024px) {
   .f-container {
     grid-template-columns: repeat(5, 1fr);
   }
-}
 
-@media (max-width: 480px) {
-  .f-container {
-    grid-template-columns: repeat(2, 1fr);
+  .f-img {
+    height: 90px;
   }
 }
+
 
 .filter-button-group {
   display: inline-block;
