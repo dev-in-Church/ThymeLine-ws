@@ -27,7 +27,12 @@ export function displayTrolleySummary() {
     }">
       <div class="item-no">${ind + 1}</div>
       <div class="trolley-item-details-grid">
-        <img class="product-image" src="${matchingProduct.image}" />
+        <div class="trolley-prod-img">
+          <div>
+             <img class="product-image" src="${matchingProduct.image}" />
+          </div>
+          <div class="phone-product-name">${matchingProduct.name}</div>
+        </div>
 
         <div class="trolley-item-details">
           <div class="product-name">${matchingProduct.name}</div>
