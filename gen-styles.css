@@ -887,6 +887,12 @@ footer .under-footer a:hover {
   }
 }
 
+@media (max-width: 375px) {
+  .search-div input {
+    width: 150px;
+  }
+}
+
 /*checkout page*/
 
 .main {
