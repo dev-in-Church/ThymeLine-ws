@@ -405,9 +405,33 @@ body {
   height: 100px;
 }
 
-@media (max-width: 1000px) {
+@media (max-width: 480px) {
+  .f-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
   .f-container {
     grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media (max-width: 834px) {
+  .f-container {
+    grid-template-columns: repeat(4, 1fr);
+  }
+}
+
+@media (max-width: 1024px) {
+  .f-container {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .f-container {
+    grid-template-columns: repeat(2, 1fr);
   }
 }
 
@@ -794,15 +818,17 @@ footer .under-footer a:hover {
     grid-template-columns: repeat(3, 1fr);
   }
 
-  .search-div {
-    width: 50px;
-  }
+  
 }
 
 @media (max-width: 480px) {
   .productsList {
     grid-template-columns: repeat(2, 1fr);
     margin: 5px, 35px;
+  }
+
+  .search-div {
+    width: 50px;
   }
 }
 
