@@ -172,7 +172,6 @@ body {
 /*---------- media query for menu ----------*/
 
 @media
-
 /*only screen and*/
 (max-width: 800px) {
   .navbar-s {
@@ -455,7 +454,6 @@ body {
     height: 80px;
   }
 }
-
 
 .filter-button-group {
   display: inline-block;
@@ -1155,7 +1153,6 @@ footer .under-footer a:hover {
     justify-content: center;
     gap: 30px;
   }
-
 }
 
 @media (max-width: 480px) {
@@ -1693,9 +1690,38 @@ Men
   border: #767676 solid 1px;
 }
 
-#men .item .down-content h4 {
-  font-size: 22px;
-  color: #2a2a2a;
-  font-weight: 700;
-  margin-bottom: 8px;
+/*media for carousels*/
+@media (max-width: 1000px) {
+  #popular {
+    padding-top: 90px;
+  }
 }
+
+@media (max-width: 480px) {
+  #popular .popular-cont {
+    padding: 10px 70px;
+  }
+
+  #men {
+    padding: 10px 70px;
+  }
+
+  #men .item img {
+    height: 80px;
+  }
+
+  #men .item .down-content h4 {
+    font-size: 18px;
+    margin-bottom: 3px;
+  }
+
+  #men .item .down-content span {
+    font-size: 13px;
+  }
+
+  #men .item .down-content ul.stars li {
+    font-size: 15px;
+  }
+}
+
+/**latt*/
