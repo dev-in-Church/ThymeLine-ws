@@ -408,6 +408,7 @@ body {
 @media (max-width: 480px) {
   .f-container {
     grid-template-columns: repeat(2, 1fr);
+    background-color: red;
   }
 
   .f-img {
