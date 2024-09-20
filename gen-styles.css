@@ -791,7 +791,7 @@ footer .under-footer a:hover {
 
 @media (max-width: 768px) {
   .productsList {
-    grid-template-columns: repeat(2, 1fr);
+    grid-template-columns: repeat(3, 1fr);
   }
 
   .search-div {
@@ -801,7 +801,7 @@ footer .under-footer a:hover {
 
 @media (max-width: 480px) {
   .productsList {
-    grid-template-columns: 1fr;
+    grid-template-columns: repeat(2, 1fr);
     margin: 5px, 35px;
   }
 }
