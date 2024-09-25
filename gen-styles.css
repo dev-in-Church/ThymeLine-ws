@@ -172,6 +172,7 @@ body {
 /*---------- media query for menu ----------*/
 
 @media
+
 /*only screen and*/
 (max-width: 800px) {
   .navbar-s {
@@ -1495,6 +1496,10 @@ responsive---qr page
 --------------------------------------------- 
 */
 @media (max-width: 480px) {
+  .qr-box {
+    grid-template-rows: 60px 1fr 50px;
+  }
+
   .qr-box .form {
     flex-direction: column;
     gap: 5px;
