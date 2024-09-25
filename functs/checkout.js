@@ -2,7 +2,9 @@ import { trolley } from "../data/trolley.js";
 import { displayTrolleySummary } from "./checkout/trolleySmmary.js";
 import { displayPaymentSummary } from "./checkout/paymentSummary.js";
 //import "../data/trolley-oop.js";
-import { toggleMenu } from "./app.js";
+import { toggleMenu, pageLoader } from "./app.js";
+
+pageLoader();
 
 displayTrolleySummary();
 displayPaymentSummary();

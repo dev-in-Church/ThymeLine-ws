@@ -1,5 +1,7 @@
-import { toggleMenu } from "../app.js";
+import { toggleMenu, pageLoader } from "../app.js";
 import { generateQR } from "./qrgen.js";
+
+pageLoader();
 
 generateQR();
 

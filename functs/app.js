@@ -174,3 +174,15 @@ export function owlCarouselFunc() {
     });
   })(window.jQuery);
 }
+
+export function pageLoader() {
+  window.addEventListener("load", () => {
+    const loader = document.querySelector(".loader");
+
+    loader.classList.add("loader-hidden");
+
+    loader.addEventListener("transitioned", () => {
+      document.body.removeChild("loader");
+    });
+  });
+}

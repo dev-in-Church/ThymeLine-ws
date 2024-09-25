@@ -1,9 +1,11 @@
 import { trolley, addToTrolley, pushToMemory } from "../data/trolley.js";
 import { products } from "../data/products.js";
 import { modifyCents } from "./utilities/currency.js";
-import { toggleMenu, toggleSidebar, renderHistoryHTML } from "./app.js";
+import { toggleMenu, toggleSidebar, renderHistoryHTML, pageLoader } from "./app.js";
 import { displayTrolleySummary } from "./checkout/trolleySmmary.js";
 
+
+pageLoader();
 //sidebar javascript
 toggleSidebar();
 renderHistoryHTML();

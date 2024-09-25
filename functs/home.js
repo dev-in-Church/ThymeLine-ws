@@ -3,8 +3,10 @@ import {
   toggleMenu,
   renderHistoryHTML,
   toggleSidebar,
-  owlCarouselFunc,
+  owlCarouselFunc, pageLoader
 } from "./app.js";
+
+pageLoader();
 
 toggleSidebar();
 //toggleMenu();
