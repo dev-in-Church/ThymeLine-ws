@@ -3,134 +3,785 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ThymeLine.net</title>
+
+    <!-- Responsive CSS -->
+    <!--link rel="stylesheet" href="css/responsive.css" /-->
+    <!-- Custom CSS -->
+
+    <!-- Additional CSS Files -->
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="assets/css/bootstrap.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/owl-carousel.css" />
+    <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css" />
+
     <link rel="stylesheet" href="gen-styles.css" />
-
-    <link rel="icon" href="assets/icons/logo-github.svg" type="image/gif" />
-
-    <title>Home</title>
   </head>
+
   <body>
     <section id="header">
-      <div id="logo-div">
-        <a href="index.html" class="logo-link">
-          <div class="logo-div">
-            <img src="assets/icons/logo-github.svg" alt="" />
-            <p>LOGO</p>
-          </div>
-        </a>
+      <a href="index.html">
+        <div class="logo-div">
+          <p>ThymeLine</p>
+          <img src="img/icons/timer-outline.svg" alt="" class="logo" />
+        </div>
+      </a>
 
-        <div class="theme">
-          <img
-            src="assets/icons/settings-outline.svg"
-            class="theme-img"
-            alt=""
-          />
+      <div class="nav-div">
+        <div id="navbar" class="js-navbar navbar-s">
+          <a href="index.html"><li>Home</li></a>
+          <a href="shop.html"><li>Shop</li></a>
+          <!--li><a href="blog.html">Blog</a></li-->
+          <!--li><a href="about.html">About</a></li-->
+          <!--li><a href="contact.html">Contact</a></li-->
+          <a class="active" href="checkout.html">
+            <li>
+              <!--a href="trolley.html"-->
+              <div class="trolley-div">
+                Trolley
+                <img
+                  src="img/icons/trolley-outline.svg"
+                  class="trolley-img"
+                  alt=""
+                />
+                <div class="count js-count">0</div>
+              </div>
+              <!--/a-->
+            </li>
+          </a>
+        </div>
+        <div class="far-imgs">
+          <!--a href="#"><i class="fa fa-qrcode"></i></a-->
+
+          <img src="img/icons/qr-code-sharp.svg" class="qrcode-img" />
+          <img src="img/icons/menu.png" class="menu-icon js-menu-icon" />
         </div>
       </div>
-
-      <div id="nav" class="nav">
-        <li>
-          <a href="index.html" class="active">
-            <img src="assets/icons/home-outline.svg" alt="" />Home</a
-          >
-        </li>
-        <li>
-          <a href="about.html">
-            <img src="assets/icons/person-outline.svg" alt="" />About me</a
-          >
-        </li>
-        <li>
-          <a href="skills.html">
-            <img src="assets/icons/desktop-outline.svg" alt="" />My Skills</a
-          >
-        </li>
-        <li>
-          <a href="projects.html">
-            <img src="assets/icons/basket-outline.svg" alt="" />My Projects</a
-          >
-        </li>
-        <li>
-          <a href="contact.html">
-            <img src="assets/icons/call-outline.svg" alt="" />Contact Me</a
-          >
-        </li>
-      </div>
-      <img class="menu-icon" src="assets/icons/menu.png" alt="" />
     </section>
-    <section class="home">
-      <div class="home-content">
-        <div class="greet">
-          <div class="greet-1">
-            <h3 class="wazzup">
-              Hello there
-              <img src="assets/icons/hand-right.svg" alt="" />, It's
-            </h3>
-            <h1>Emmanuel</h1>
-            <h3>
-              And I'm a <span class="d-arr">&darr;</span>
-              <span class="skills">
-                <marquee behavior="scroll" direction="up" scrollamount="3">
-                  <ul>
-                    <li>Graphic Designer</li>
-                    <li>Web Designer</li>
-                    <li>Front-End Developer</li>
-                  </ul>
-                </marquee>
-              </span>
-              <!--span class="multiple-text"></span-->
-            </h3>
-          </div>
-          <div class="greet-2">
-            <img src="assets/website-products-35.png" alt="" />
-          </div>
-        </div>
+    <!--sidebarsssssss-->
+    <div class="sidebar">
+      <div class="s-bar-close-div">
+        <i class="s-b-close fa fa-arrow-left"></i>
+      </div>
+      <div class="codes-grid"></div>
+    </div>
+    <!--sidebarsssssss end-->
 
-        <!--p>I am a web developer and web designer for more than 10 years. I have extensive experience in this field, as I have dealt with more than one company and work as a freelancer sometimes.</p-->
-        <p>
-          I’m a responsible and passionate front-end developer,UX/UI designer
-          with five years of experience. Skilled in developing high quality
-          responsive websites and mobile applications with elegant and efficient
-          code. Check out in
-          <span><a class="proj-link" href="skills.html">MY SKILLS</a></span
-          >for more info.
-        </p>
-
-        <div class="social-media">
-          <div>
-            <a>
-              <img src="assets/icons/logo-github.svg" alt="" />
-            </a>
-            <a>
-              <img src="assets/icons/logo-instagram.svg" alt="" />
-            </a>
-            <a>
-              <img src="assets/icons/logo-facebook.svg" alt="" />
-            </a>
-            <a>
-              <img src="assets/icons/logo-linkedin.svg" alt="" />
-            </a>
-            <a
-              href="https://stackoverflow.com/users/23745814/maanu-itman"
-              target="_blank"
-            >
-              <img src="assets/icons/logo-stackoverflow.svg" alt="" />
-            </a>
-          </div>
-          <div class="resume-btn">
-            <a href="Emmanuel A._CV.pdf" target="_blank">
-              <button>
-                <img src="assets/icons/download-outline.svg" alt="" />
-                RESUME
+    <section class="section-hero">
+      <div class="welcome-hero-txt">
+        <h5>get your desired products in resonable price</h5>
+      </div>
+      <div class="wellFloat">
+        <div>
+          <h4>GET YOUR DESIRED PRODUCTS IN REASONABLE PRICE</h4>
+          <div class="well-div">
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea sequi
+              deserunt voluptatibus consectetur culpa. Hic ducimus beata
+            </p>
+            <div class="button-div">
+              <button
+                class="welcome-btn"
+                onclick="window.location.href='shop.html'"
+              >
+                <i class="fa fa-shopping-cart"></i>&nbsp;Start&nbsp;Now
               </button>
-            </a>
+            </div>
           </div>
         </div>
       </div>
 
-      <div class="home-img">
-        <img src="assets/website-products-35.png" alt="" />
+      <div class="hero-float">
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolores, quos
+          voluptatum odit, eveniet ullam ratione alias minima beatae est,
+          laboriosam aut pariatur recusandae placeat laudantium ex magnam libero
+          eligendi reiciendis.lo Lorem, ipsum dolor sit amet consectetur
+          adipisicing elit. Perspiciatis reiciendis illo obcaecati
+          necessitatibus quis? Placeat ullam ratione excepturi aut voluptatum
+          consequuntur, illo deleniti totam, id dicta minima atque nobis magni.
+        </p>
       </div>
     </section>
+    <section class="services"></section>
+
+    <section class="new-products"></section>
+
+    <!-- ***** Popular categories Starts ***** -->
+    <section class="popular-section" id="popular">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="section-heading">
+              <h2>Popular Caregories</h2>
+              <span
+                >Details to details is what makes ThymeLine different from the
+                other themes.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container popular-cont">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="categories-item-carousel">
+              <div class="owl-categories-item owl-carousel">
+                <div class="item">
+                  <img src="img/categories/fashion.jpeg" alt="" />
+
+                  <div class="categories-down-content">
+                    <p>Fashion</p>
+                    <button>Visit</button>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/categories/food&drinks.jpeg" alt="" />
+
+                  <div class="categories-down-content">
+                    <p>Food & Drinks</p>
+                    <button>Visit</button>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/categories/beauty.jpeg" alt="" />
+
+                  <div class="categories-down-content">
+                    <p>Beauty</p>
+                    <button>Visit</button>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/categories/electronics.jpeg" alt="" />
+
+                  <div class="categories-down-content">
+                    <p>Electronics</p>
+                    <button>Visit</button>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/categories/f n drinks.jpeg" alt="" />
+
+                  <div class="categories-down-content">
+                    <p>Foodstuff</p>
+                    <button>Visit</button>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/categories/bby shop.jpeg" alt="" />
+
+                  <div class="categories-down-content">
+                    <p>Baby shop</p>
+                    <button>Visit</button>
+                  </div>
+                </div>
+                <div class="item">
+                  <img src="img/categories/sporting.jpeg" alt="" />
+                  <div class="categories-down-content">
+                    <p>Sporting</p>
+                    <button>Visit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ***** Popular categories Ends ***** -->
+
+    <!-- ***** latest products Starts ***** -->
+    <section class="section" id="latest">
+      <div class="container">
+        <div class="col-lg-6">
+          <div class="section-heading">
+            <h2>Latest on ThymeLine</h2>
+            <span
+              >Details to details is what makes ThymeLine different from the
+              other themes.</span
+            >
+          </div>
+        </div>
+      </div>
+      <div class="container latest-cont">
+        <div class="row">
+          <div class="col-lg-12">
+            <div class="men-item-carousel">
+              <div class="owl-men-item owl-carousel">
+                <div class="item">
+                  <div class="thumb">
+                    <div class="hover-content">
+                      <ul>
+                        <li>
+                          <a href="single-product.html"
+                            ><i class="fa fa-eye"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="single-product.html"
+                            ><i class="fa fa-star"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="single-product.html"
+                            ><i class="fa fa-shopping-cart"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+
+                    <div class="late-prod">
+                      <img src="img/products/basketball.png" alt="" />
+                    </div>
+                  </div>
+                  <div class="down-content">
+                    <h4>Basketball</h4>
+                    <ul class="stars">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <span>$120.00</span>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <div class="hover-content">
+                      <ul>
+                        <li>
+                          <a href="single-product.html"
+                            ><i class="fa fa-eye"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="single-product.html"
+                            ><i class="fa fa-star"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="single-product.html"
+                            ><i class="fa fa-shopping-cart"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <img src="img/products/j9.png" alt="" />
+                  </div>
+                  <div class="down-content">
+                    <h4>Jordan 9</h4>
+                    <ul class="stars">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <span>$120.00</span>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <div class="hover-content">
+                      <ul>
+                        <li>
+                          <a href="single-product.html"
+                            ><i class="fa fa-eye"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="single-product.html"
+                            ><i class="fa fa-star"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="single-product.html"
+                            ><i class="fa fa-shopping-cart"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <img src="img/products/laptop-img.png" alt="" />
+                  </div>
+                  <div class="down-content">
+                    <h4>Lenovo Notebook</h4>
+                    <ul class="stars">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <span>$150.00</span>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <div class="hover-content">
+                      <ul>
+                        <li>
+                          <a href="single-product.html"
+                            ><i class="fa fa-eye"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="single-product.html"
+                            ><i class="fa fa-star"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="single-product.html"
+                            ><i class="fa fa-shopping-cart"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <img src="img/products/phone 6.png" alt="" />
+                  </div>
+                  <div class="down-content">
+                    <h4>Phone 32</h4>
+                    <ul class="stars">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <span>$120.00</span>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <div class="hover-content">
+                      <ul>
+                        <li>
+                          <a href="single-product.html"
+                            ><i class="fa fa-eye"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="single-product.html"
+                            ><i class="fa fa-star"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="single-product.html"
+                            ><i class="fa fa-shopping-cart"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <img src="img/products/dress-shirt-img.png" alt="" />
+                  </div>
+                  <div class="down-content">
+                    <h4>Classic Shirt</h4>
+                    <ul class="stars">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <span>$120.00</span>
+                  </div>
+                </div>
+                <div class="item">
+                  <div class="thumb">
+                    <div class="hover-content">
+                      <ul>
+                        <li>
+                          <a href="single-product.html"
+                            ><i class="fa fa-eye"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="single-product.html"
+                            ><i class="fa fa-star"></i
+                          ></a>
+                        </li>
+                        <li>
+                          <a href="single-product.html"
+                            ><i class="fa fa-shopping-cart"></i
+                          ></a>
+                        </li>
+                      </ul>
+                    </div>
+                    <img src="img/products/women-clothes-img.png" alt="" />
+                  </div>
+                  <div class="down-content">
+                    <h4>Women dress</h4>
+                    <ul class="stars">
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                      <li><i class="fa fa-star"></i></li>
+                    </ul>
+                    <span>$120.00</span>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ***** latest products Ends ***** -->
+
+    <section class="featured-products">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div class="section-heading">
+              <h2>Featured Products</h2>
+              <span
+                >Details to details is what makes ThymeLine different from the
+                other themes.</span
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="f-container">
+        <div class="products-single">
+          <div class="f-img-div">
+            <img src="img/products/basketball.png" class="f-img" alt="Image" />
+            <div class="mask-icon">
+              <ul>
+                <li>
+                  <a
+                    href="#"
+                    data-toggle="tooltip"
+                    data-placement="right"
+                    title="View"
+                    ><i class="fa fa-eye"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    data-toggle="tooltip"
+                    data-placement="right"
+                    title="Compare"
+                    ><i class="fa fa-shopping-cart"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    data-toggle="tooltip"
+                    data-placement="right"
+                    title="Add to Wishlist"
+                    ><i class="fa fa-heart"></i
+                  ></a>
+                </li>
+              </ul>
+              <a class="cart" href="#">Add to Trolley</a>
+            </div>
+          </div>
+          <div class="dwn-text">
+            <h4>Basketball</h4>
+            <h5>$7.79</h5>
+          </div>
+        </div>
+        <div class="products-single">
+          <div class="f-img-div">
+            <img
+              src="img/products/round-sunglasses-black.jpg"
+              class="f-img"
+              alt="Image"
+            />
+            <div class="mask-icon">
+              <ul>
+                <li>
+                  <a
+                    href="#"
+                    data-toggle="tooltip"
+                    data-placement="right"
+                    title="View"
+                    ><i class="fa fa-eye"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    data-toggle="tooltip"
+                    data-placement="right"
+                    title="Compare"
+                    ><i class="fa fa-shopping-cart"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    data-toggle="tooltip"
+                    data-placement="right"
+                    title="Add to Wishlist"
+                    ><i class="fa fa-heart"></i
+                  ></a>
+                </li>
+              </ul>
+              <a class="cart" href="#">Add to Trolley</a>
+            </div>
+          </div>
+          <div class="dwn-text">
+            <h4>Sunglass</h4>
+            <h5>$7.79</h5>
+          </div>
+        </div>
+        <div class="products-single">
+          <div class="f-img-div">
+            <img src="img/products/t-shirt.png" class="f-img" alt="Image" />
+            <div class="mask-icon">
+              <ul>
+                <li>
+                  <a
+                    href="#"
+                    data-toggle="tooltip"
+                    data-placement="right"
+                    title="View"
+                    ><i class="fa fa-eye"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    data-toggle="tooltip"
+                    data-placement="right"
+                    title="Compare"
+                    ><i class="fa fa-shopping-cart"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    data-toggle="tooltip"
+                    data-placement="right"
+                    title="Add to Wishlist"
+                    ><i class="fa fa-heart"></i
+                  ></a>
+                </li>
+              </ul>
+              <a class="cart" href="#">Add to Trolley</a>
+            </div>
+          </div>
+          <div class="dwn-text">
+            <h4>Tshirt</h4>
+            <h5>$7.79</h5>
+          </div>
+        </div>
+        <div class="products-single">
+          <div class="f-img-div">
+            <img
+              src="img/products/plain-hooded-fleece-sweatshirt-yellow.jpg"
+              class="f-img"
+              alt="Image"
+            />
+            <div class="mask-icon">
+              <ul>
+                <li>
+                  <a
+                    href="#"
+                    data-toggle="tooltip"
+                    data-placement="right"
+                    title="View"
+                    ><i class="fa fa-eye"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    data-toggle="tooltip"
+                    data-placement="right"
+                    title="Compare"
+                    ><i class="fa fa-shopping-cart"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    data-toggle="tooltip"
+                    data-placement="right"
+                    title="Add to Wishlist"
+                    ><i class="fa fa-heart"></i
+                  ></a>
+                </li>
+              </ul>
+              <a class="cart" href="#">Add to Trolley</a>
+            </div>
+          </div>
+          <div class="dwn-text">
+            <h4>Yellow Hoodie</h4>
+            <h5>$7.79</h5>
+          </div>
+        </div>
+        <div class="products-single">
+          <div class="f-img-div">
+            <img
+              src="img/products/men-cozy-fleece-zip-up-hoodie-red.jpg"
+              class="f-img"
+              alt="Image"
+            />
+            <div class="mask-icon">
+              <ul>
+                <li>
+                  <a
+                    href="#"
+                    data-toggle="tooltip"
+                    data-placement="right"
+                    title="View"
+                    ><i class="fa fa-eye"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    data-toggle="tooltip"
+                    data-placement="right"
+                    title="Compare"
+                    ><i class="fa fa-shopping-cart"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    data-toggle="tooltip"
+                    data-placement="right"
+                    title="Add to Wishlist"
+                    ><i class="fa fa-heart"></i
+                  ></a>
+                </li>
+              </ul>
+              <a class="cart" href="#">Add to Trolley</a>
+            </div>
+          </div>
+          <div class="dwn-text">
+            <h4>Red Hoodie</h4>
+            <h5>$7.79</h5>
+          </div>
+        </div>
+        <div class="products-single">
+          <div class="f-img-div">
+            <img src="img/products/backpack.jpg" class="f-img" alt="Image" />
+            <div class="mask-icon">
+              <ul>
+                <li>
+                  <a
+                    href="#"
+                    data-toggle="tooltip"
+                    data-placement="right"
+                    title="View"
+                    ><i class="fa fa-eye"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    data-toggle="tooltip"
+                    data-placement="right"
+                    title="Compare"
+                    ><i class="fa fa-shopping-cart"></i
+                  ></a>
+                </li>
+                <li>
+                  <a
+                    href="#"
+                    data-toggle="tooltip"
+                    data-placement="right"
+                    title="Add to Wishlist"
+                    ><i class="fa fa-heart"></i
+                  ></a>
+                </li>
+              </ul>
+              <a class="cart" href="#">Add to Trolley</a>
+            </div>
+          </div>
+          <div class="dwn-text">
+            <h4>Backpack</h4>
+            <h5>$7.79</h5>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!--footer-->
+    <footer>
+      <div class="container">
+        <div class="row">
+          <div class="colmn">
+            <div class="logo">
+              <div>ThymeLine</div>
+            </div>
+            <ul>
+              <li>
+                <a href="#">16501 Britam Towers, FL 33160, Nairobi, Kenya</a>
+              </li>
+              <li><a href="#">ThymeLine@company.com</a></li>
+              <li><a href="#">079-519-8141</a></li>
+            </ul>
+          </div>
+          <div class="colmn">
+            <h4>Shopping &amp; Categories</h4>
+            <ul>
+              <li><a href="#">Fashion</a></li>
+              <li><a href="#">Health & Beauty</a></li>
+              <li><a href="#">Electronics</a></li>
+            </ul>
+          </div>
+          <div class="colmn">
+            <h4>Useful Links</h4>
+            <ul>
+              <li><a href="#">Homepage</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">Contact Us</a></li>
+            </ul>
+          </div>
+          <div class="colmn">
+            <h4>Help &amp; Information</h4>
+            <ul>
+              <li><a href="#">Help</a></li>
+              <li><a href="#">FAQ's</a></li>
+              <li><a href="#">Shipping</a></li>
+              <li><a href="#">Tracking ID</a></li>
+            </ul>
+          </div>
+        </div>
+        <div class="under-footer">
+          <p>
+            Copyright © 2024 ThymeLine Co. Ltd. All Rights Reserved.
+
+            <br />Creator &amp; Designer:
+            <a href="" target="_parent" title="">Emmanuel_IT</a>
+          </p>
+          <ul>
+            <li>
+              <a href="#"><i class="fa fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-linkedin"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fa fa-behance"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </footer>
+
+    <!-- jQuery -->
+    <script src="assets/js/jquery-2.1.0.min.js"></script>
+
+    <!-- Plugins -->
+    <script src="assets/js/owl-carousel.js"></script>
+
+    <script type="module" src="functs/home.js"></script>
   </body>
-  <script src="scripts/app.js"></script>
 </html>
