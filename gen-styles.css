@@ -302,9 +302,9 @@ body {
 
 /*hero---section*/
 .section-hero {
-  background-image: url(img/welcome-banner.jpg);
+  background-image: url(img/a\ man\ moving\ a\ \ 7acb5a8f-a606-41e3-803b-18ab56fcc0f1.png);
   background-position: center;
-  background-size: cover;
+  background-size: unset;
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 60vh;
