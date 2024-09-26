@@ -304,7 +304,7 @@ body {
 .section-hero {
   background-image: url(img/a\ man\ moving\ a\ \ 7acb5a8f-a606-41e3-803b-18ab56fcc0f1.png);
   background-position: center;
-  background-size: unset;
+  background-size: cover;
   display: grid;
   grid-template-columns: 1fr 1fr;
   height: 60vh;
@@ -407,17 +407,11 @@ body {
     .section-hero {
       border-bottom-left-radius: 9px;
       border-bottom-right-radius: 9px;
+      height: 50vh;
     }
 
     .welcome-hero-txt {
-      text-align: center;
-      padding: 15px;
-    }
-
-    .welcome-hero-txt h5 {
-      font-size: 25px;
-      font-weight: 500;
-      margin-bottom: 5px;
+      display: none;
     }
 
     .wellFloat {
