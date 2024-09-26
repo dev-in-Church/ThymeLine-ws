@@ -1597,17 +1597,13 @@ Men
 }
 
 /**/
-#popular .item img {
-  height: 160px;
-  width: 100%;
-}
 
 #popular .item {
   border: #e1e1e1 solid 1px;
   background-image: url(img/fashion\ 06d48b74-3ad3-45ca-acbf-7f01ae50633a.png);
   background-position: center;
   background-size: cover;
-  width: 200px;
+  width: 250px;
   height: 200px;
   border-radius: 5px;
   display: flex;
