@@ -1610,18 +1610,24 @@ Men
 
 #popular .item {
   border: #e1e1e1 solid 1px;
-  border-radius: 3px;
-  padding-bottom: 5px;
+  background-image: url(img/fashion\ 06d48b74-3ad3-45ca-acbf-7f01ae50633a.png);
+  background-position: center;
+  background-size: cover;
+  width: 200px;
+  height: 200px;
+  border-radius: 5px;
   display: flex;
-  flex-direction: column;
   align-items: center;
   position: relative;
+  justify-content: center;
 }
 
 .categories-down-content {
   text-align: center;
   display: flex;
   flex-direction: column;
+  justify-content: center;
+  align-items: center;
   z-index: 3;
 }
 
