@@ -1135,7 +1135,18 @@ footer .under-footer a:hover {
   margin-bottom: 5px;
 }
 
-.product-quantity button,
+.product-quantity {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  width: 100%;
+}
+
+.product-quantity a i {
+  color: #320023;
+  font-size: 28px;
+}
+
 #btn,
 #btnq {
   background: #320023;

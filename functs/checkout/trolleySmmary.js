@@ -48,27 +48,35 @@ export function displayTrolleySummary() {
             </div>
           </div>
           <div class="product-quantity">
-            <span>
-              Quantity:
-              <span class="minus js-minus" data-product-id="${
-                matchingProduct.id
-              }"><</span
-              ><span class="quantity-label">${trolleyItem.quantity}</span
-              ><span class="plus js-plus" data-product-id="${
-                matchingProduct.id
-              }">></span>
-            </span>
-            <button class="remove-trolley js-remove-trolley" data-product-id="${
-              matchingProduct.id
-            }">
-              Remove
-            </button>
+            <div>
+              <span>
+                Quantity:
+                <span class="minus js-minus" data-product-id="${
+                  matchingProduct.id
+                }"><</span
+                ><span class="quantity-label">${trolleyItem.quantity}</span
+                ><span class="plus js-plus" data-product-id="${
+                  matchingProduct.id
+                }">></span>
+              </span>
+            </div>
+
+            <div>
+                <a href="#" class="remove-trolley js-remove-trolley" data-product-id="${
+                  matchingProduct.id
+                }">
+              <i class="fa fa-trash"></i>
+            </a>
+            </div>
+            
+            
           </div>
         </div>
       </div>
     </div>
     
   `;
+
 
     //console.log(trolleyQuantity);
     //document.querySelector(".js-count").innerHTML = trolleyQuantity;
