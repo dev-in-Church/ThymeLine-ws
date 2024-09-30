@@ -1,67 +1,32 @@
-import { trolley, addToTrolley, pushToMemory } from "../data/trolley.js";
-import { products } from "../data/products.js";
-import { modifyCents } from "./utilities/currency.js";
-import { toggleMenu, toggleSidebar, renderHistoryHTML, pageLoader } from "./app.js";
-import { displayTrolleySummary } from "./checkout/trolleySmmary.js";
+//import { updateTrolleyQuantity } from "../data/trolley.js";
+import {
+  toggleMenu,
+  toggleSidebar,
+  owlCarouselFunc,
+  pageLoader,
+} from "./app.js";
 import { renderHistoryHTML } from "../data/qrSummary.js";
 
 pageLoader();
-//sidebar javascript
 toggleSidebar();
+//toggleMenu();
 renderHistoryHTML();
-
-let productsHTML = "";
-
-products.forEach((product) => {
-  product.count == undefined
-    ? (product.count = "")
-    : (product.count = product.count);
-  productsHTML += `
-    <div class="item">
-      <img src="${product.image}" alt="" />
-      <h5>${product.name}</h5>
-      <div class="ppc">
-      <div class="price">$${modifyCents(product.price)}</div>
-      <div class="pc">${product.count}</div>
-      </div>
-      <button class="add-to-trolley-button button-primary js-add-to-trolley" data-product-id="${
-        product.id
-      }">
-      add to trolley
-      </button>
-    </div>
-  `;
-});
-
-document.querySelector(".js-productsList").innerHTML = productsHTML;
-
-//displayTrolleySummary();
-
+owlCarouselFunc();
 /*
-function updateTrolleyQuantity() {
-  trolley.forEach((trolleyItem) => {
-    //pushToMemory();
-  });
-}
-  */
-
-document.querySelectorAll(".js-add-to-trolley").forEach((button) => {
-  button.addEventListener("click", () => {
-    const productId = button.dataset.productId; //keep this code outside,, pass parameter'productId'
-
-    //addToTrolley();works also without the parameter...[parameters functs]
-    addToTrolley(productId); //pass the parameter when we call the function
-    //pushToMemory();
-    //updateTrolleyQuantity();
-    //displayTrolleySummary();
-  });
+window.addEventListener("deviceorientation", (event) => {
+  console.log("Device Orientation:", event.alpha, event.beta, event.gamma);
 });
-
-/*
-let x = [1, 2, 3];
-let y = [...x];
-y.push(4);
-console.log(y);
 */
 
-/*log this and its functs*/
+/*
+navigator.getBattery().then((battery) => {
+  console.log("Battery Level:", battery.level * 100 + "%");
+  console.log("Charging:", battery.charging ? "Yes" : "No");
+});
+
+Notification.requestPermission().then((permission) => {
+  new Notification("Hello, World!");
+});
+*/
+
+console.log(new Date().getFullYear());
