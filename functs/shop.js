@@ -3,7 +3,7 @@ import { products } from "../data/products.js";
 import { modifyCents } from "./utilities/currency.js";
 import { toggleMenu, toggleSidebar, renderHistoryHTML, pageLoader } from "./app.js";
 import { displayTrolleySummary } from "./checkout/trolleySmmary.js";
-
+import { renderHistoryHTML } from "../data/qrSummary.js";
 
 pageLoader();
 //sidebar javascript

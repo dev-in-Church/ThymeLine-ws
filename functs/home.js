@@ -1,13 +1,13 @@
 //import { updateTrolleyQuantity } from "../data/trolley.js";
 import {
   toggleMenu,
-  renderHistoryHTML,
   toggleSidebar,
-  owlCarouselFunc, pageLoader
+  owlCarouselFunc,
+  pageLoader,
 } from "./app.js";
+import { renderHistoryHTML } from "../data/qrSummary.js";
 
 pageLoader();
-
 toggleSidebar();
 //toggleMenu();
 renderHistoryHTML();
@@ -28,3 +28,5 @@ Notification.requestPermission().then((permission) => {
   new Notification("Hello, World!");
 });
 */
+
+console.log(new Date().getFullYear());

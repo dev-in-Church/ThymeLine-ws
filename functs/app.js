@@ -1,9 +1,11 @@
 import { updateTrolleyQuantity } from "../data/trolley.js";
 import { qrSummary } from "../data/qrSummary.js";
+// import { renderHistoryHTML } from "../data/qrSummary.js";
 
 updateTrolleyQuantity();
+// renderHistoryHTML();
 
-//js for menu
+// js for menu
 export function toggleMenu() {
   const menuIcon = document.querySelector(".js-menu-icon");
   var navBar = document.querySelector(".navbar-s");
@@ -34,53 +36,6 @@ export function toggleSidebar() {
     sidebar.style.display = "none";
   });
 }
-//history html
-
-export function renderHistoryHTML() {
-  let historyHTML = "";
-
-  qrSummary.forEach((item) => {
-    historyHTML += `
-  <div class="code-container">
-          <div class="image">
-            <img src="img/icons/qr-code-sharp.svg" alt="" />
-          </div>
-          <div class="date">Due:20/9/2024</div>
-          <div class="status">Active</div>
-          <div class="rebuy">
-            <a href=""
-              >Rebuy<img src="img/icons/arrow-redo-circle-outline.svg" alt=""
-            /></a>
-          </div>
-          <div class="options">
-            <img src="img/icons/download-outline.svg" alt="" />
-            <img src="img/icons/share-social-outline.svg" alt="" />
-            <img src="img/icons/trash-outline.svg" alt="" />
-          </div>
-        </div>
-  `;
-    /*
-    if ((qrSummary.length = 0)) {
-      document.querySelector(
-        ".codes-grid"
-      ).innerHTML = `<div>Due:20/9/2024</div>`;
-    } else {
-      document.querySelector(".codes-grid").innerHTML = historyHTML;
-    }*/
-    //here
-    //document.querySelector(".codes-grid").innerHTML = historyHTML;
-  });
-
-  if (qrSummary.length == 0) {
-    document.querySelector(
-      ".codes-grid"
-    ).innerHTML = `<div class="empty-shoplist"><p>You currently have zero active shoplists:</p>
-      <p>Shop &amp; pay for Goods now: <span><a href="shop.html">click Here</a></span></p>
-    </div>`;
-  } else {
-    document.querySelector(".codes-grid").innerHTML = historyHTML;
-  }
-}
 
 /*
 document.getElementById("newqr").addEventListener("click", () => {
@@ -99,7 +54,7 @@ export function owlCarouselFunc() {
       loop: true,
       dots: true,
       nav: true,
-      margin: 30,
+      margin: 20,
       responsive: {
         0: {
           items: 1,
@@ -133,10 +88,10 @@ export function owlCarouselFunc() {
           items: 1,
         },
         600: {
-          items: 2,
+          items: 3,
         },
         1000: {
-          items: 4,
+          items: 5,
         },
       },
     });

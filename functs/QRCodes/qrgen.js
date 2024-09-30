@@ -28,13 +28,20 @@ export function generateQR() {
 
     //clientName.value += "30, 50";
     document.getElementById("qrcode").innerHTML = "";
-    new QRCode(document.getElementById("qrcode"), {
-      text: `${clientName.value.toUpperCase()}${codeContents.name}\n${
-        codeContents.code
-      }:${trolley.length + "0"}`,
+    let qrcodeCode = `${clientName.value.toUpperCase()}${codeContents.name}\n${
+      codeContents.code
+    }:${trolley.length + "0"}`;
+
+    // saveQR(qrcodeCode);
+
+    const qrcode = new QRCode(document.getElementById("qrcode"), {
+      text: qrcodeCode,
       width: "200",
       height: "200",
     });
+
+    console.log(qrcodeCode);
+    // return qrcodeCode;
 
     payBtn.style.display = "block";
     //document.createElement("button");
@@ -46,7 +53,7 @@ export function generateQR() {
       new Date().getFullYear() - 2000 + trolley.length
     }`,
   };
-  //return codeContents;
+  // return codeContents;
   //console.log(codeContents.code);
   //console.log(typeof new Date().getFullYear());
 
@@ -84,21 +91,25 @@ export function generateQR() {
   checkInput();
 
   ///check qrSmm contents
+  // return codeContents;
 }
 
 ////save qr after payments
-export function saveQR() {
-  document.getElementById("submit").addEventListener("submit", (event) => {
-    //event.preventDefault();
+export function saveQR(newId) {
+  document.getElementById("submit").addEventListener("click", (event) => {
+    const now = `${new Date().getFullYear()}-xxr-${qrSummary.length}`;
+    event.preventDefault();
     qrSummary.push({
-      id: "19oo564",
+      id: `${now}`,
       image: "image here",
-      date: "date",
+      date: now,
     });
     alert("confirm payments");
     qrToMemory();
     //window.open("payments.html", "_self");
     console.log(qrSummary);
+    console.log(now);
+
     //window.open("payments.html", "_self"); //prevent from being submitted
     //run func
 
@@ -107,8 +118,12 @@ export function saveQR() {
   });
 
   console.log(qrSummary.id);
+  console.log("hello");
+  // console.log(codeContents);
 }
 
+/*
 setTimeout(() => {
   console.log("waited 10 seconds");
 }, 10000);
+*/
