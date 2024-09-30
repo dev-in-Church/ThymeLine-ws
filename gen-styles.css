@@ -1621,6 +1621,7 @@ Men
   align-items: center;
   position: relative;
   justify-content: center;
+  cursor: pointer;
 }
 
 #popular .item::before {
