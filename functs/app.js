@@ -111,7 +111,7 @@ export function owlCarouselFunc() {
           items: 2,
         },
         1000: {
-          items: 5,
+          items: 4,
         },
       },
     });
