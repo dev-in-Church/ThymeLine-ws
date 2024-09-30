@@ -5,10 +5,10 @@ import {
   owlCarouselFunc,
   pageLoader,
 } from "./app.js";
-// import { renderHistoryHTML } from "../data/qrSummary.js";
+import { renderHistoryHTML } from "../data/qrSummary.js";
 
 pageLoader();
-// toggleSidebar();
+toggleSidebar();
 //toggleMenu();
 renderHistoryHTML();
 owlCarouselFunc();
