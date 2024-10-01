@@ -77,7 +77,6 @@ export function displayTrolleySummary() {
     
   `;
 
-
     //console.log(trolleyQuantity);
     //document.querySelector(".js-count").innerHTML = trolleyQuantity;
     updateTrolleyQuantity();
@@ -127,6 +126,8 @@ export function displayTrolleySummary() {
 
   document.querySelectorAll(".js-plus").forEach((plus) => {
     plus.addEventListener("click", () => {
+      // console.log("hello");
+
       const productId = plus.dataset.productId;
       trolley.forEach((trolleyItem) => {
         const product_id = trolleyItem.productId;
