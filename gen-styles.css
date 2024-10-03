@@ -35,19 +35,32 @@ body {
 
 /*Header start*/
 
+.header {
+  position: fixed;
+  display: flex;
+  flex-direction: column;
+  z-index: 999;
+  inset: 0 0 auto 0;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.22);
+}
+
+.top-header {
+  background: #171717;
+  display: flex;
+  min-height: 30px;
+  justify-content: end;
+  padding: 1px 15px;
+}
+
 #header {
   display: flex;
   align-items: center;
   justify-content: space-between;
   padding: 1px 50px;
-  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.22);
-  z-index: 300;
   background: #ffffff;
-  position: sticky;
-  top: 0;
-  left: 0;
-  height: 65px;
+  height: 50px;
 }
+
 
 #header a {
   text-decoration: none;
