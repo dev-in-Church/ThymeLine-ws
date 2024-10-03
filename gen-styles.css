@@ -1833,6 +1833,44 @@ Men
 
 /**latt*/
 
+/*currency converter*/
+.select-box {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 4px 0px;
+  padding: 0px 6px;
+  height: 30px;
+  text-align: center;
+  border: 1px solid #9999;
+}
+
+.select-box .cur {
+  color: #ffffff;
+  margin-right: 5px;
+  font-size: 13px;
+}
+
+.select-box img {
+  height: 30px;
+}
+
+.select-box select {
+  width: auto;
+  outline: none;
+  height: auto;
+  color: #ffffff;
+  background: transparent;
+  border: none;
+  font-size: 14px;
+  margin: 0 -5px 0 5px;
+}
+
+.select-box select option {
+  color: #000000;
+}
+
+
 /*page-loader*/
 .loader {
   position: fixed;
