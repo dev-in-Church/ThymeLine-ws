@@ -1595,6 +1595,7 @@ Men
 #latest {
   padding-top: 20px;
   margin-top: 80px;
+  display: none;
 }
 
 #latest .section-heading {
@@ -1604,6 +1605,7 @@ Men
 /**/
 #popular {
   padding-top: 150px;
+  display: none;
 }
 
 /**/
@@ -1752,11 +1754,11 @@ Men
   transform: translateY(-25px);
 }
 
-/*
+
 #popular .owl-dots {
   display: none;
 }
-  */
+
 
 #latest .owl-nav .owl-prev,
 #popular .owl-nav .owl-prev {
