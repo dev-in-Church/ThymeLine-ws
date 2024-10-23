@@ -17,6 +17,7 @@ export const products = [
     price: 1805,
     image: "img/products/basketball.png",
     count: 105,
+    category: "Sporting",
   }, //0720862161 _ Samba
   {
     id: "gshshsjsj2-hhdhgdv49-dd",
@@ -24,6 +25,7 @@ export const products = [
     price: 1030,
     image: "img/products/j9.png",
     count: 1056,
+    category: "fashion",
   },
   {
     id: "shshgsgs3-sggsghja7278-ssggd",
@@ -31,6 +33,7 @@ export const products = [
     price: 4500,
     image: "img/products/phone 6.png",
     count: 147,
+    category: "Electronics",
   },
   {
     id: "ssgsshhshs4-sgdgeke-eg27ssjd",
@@ -38,6 +41,7 @@ export const products = [
     price: 9100,
     image: "img/products/laptop-img.png",
     count: 325,
+    category: "Electronics",
   },
   {
     id: "eteteys5-shgfffhdhd27-gdgfdfdh22",
@@ -45,6 +49,7 @@ export const products = [
     price: 3310,
     image: "img/products/img-1.png",
     count: 8,
+    category: "Sporting",
   },
   {
     id: "dgdgdhhdhgd6-dhdhgggd-rete5637",
@@ -52,6 +57,7 @@ export const products = [
     price: 1100,
     image: "img/products/img-2.png",
     count: 111,
+    category: "Household",
   },
   {
     id: "fdggddgdh7-cgcggcfcfxghx-hdgfsf77",
@@ -59,6 +65,7 @@ export const products = [
     price: 8045,
     image: "img/products/round-sunglasses-black.jpg",
     count: 1044,
+    category: "Fashion",
   },
   {
     id: "dfdghdvffgc8-dfdfgdghdhhdg-sdttt6367",
@@ -66,13 +73,15 @@ export const products = [
     price: 5007,
     image: "img/products/women-clothes-img.png",
     count: 310,
+    category: "Fashion",
   },
   {
     id: "dddfgdde9-ggcxfxffxfx-djhggfd635",
-    name: "Plain Yellow Hood",
+    name: "Plain Yellow Hoodie",
     price: 3200,
     image: "img/products/plain-hooded-fleece-sweatshirt-yellow.jpg",
     count: 746,
+    category: "Fashion",
   },
   {
     id: "dggdfdfd10-dgffdffdffd-3hggd753",
@@ -80,6 +89,7 @@ export const products = [
     price: 2305,
     image: "img/products/women-shoes-img.jpg",
     count: 1261,
+    category: "Fashion",
   },
   {
     id: "dgdfgdhhjd11-dfgdsjjsgdd-sfffsfgshh26773",
@@ -87,6 +97,7 @@ export const products = [
     price: 2175,
     image: "img/products/women-bag-img.jpg",
     count: 862,
+    category: "Fashion",
   },
   {
     id: "dggdghsjjjsff12-hdggffdghshd-35sgffss2",
@@ -94,6 +105,7 @@ export const products = [
     price: 8103,
     image: "img/products/product-9.jpg",
     count: 412,
+    category: "Furniture",
   },
   {
     id: "dgfffsgggag13-gggxgxxfffxfxhjs1-hggdf55",
@@ -101,6 +113,7 @@ export const products = [
     price: 1803,
     image: "img/products/backpack.jpg",
     count: 1290,
+    category: "Fashion",
   },
   {
     id: "cggcggggxgff14-sgffdhhhjdfre-hdgfdffs5338",
@@ -108,6 +121,7 @@ export const products = [
     price: 1032,
     image: "img/products/cat-2.jpg",
     count: 210,
+    category: "Electronics",
   },
   {
     id: "dgfdffdtt15-ggffddsjjjs-sftwhbvxv",
@@ -115,6 +129,7 @@ export const products = [
     price: 4501,
     image: "img/products/chocolate3.png",
     count: 3360,
+    category: "Food",
   },
   {
     id: "sggggsgggsj16-sgggsggggs-dgrjhxvh6372",
@@ -122,12 +137,14 @@ export const products = [
     price: 9102,
     image: "img/products/dress-shirt-img.png",
     count: 2603,
+    category: "Fashion",
   },
   {
     id: "ssghsjja17-chhhxxjjjw-szgggya63788",
     name: "Fresh Grapes",
     price: 3310,
     image: "img/products/f1.png",
+    category: "Food",
   },
   {
     id: "dgggajjj18-ahsgggggs-axgggxgsj273738",
@@ -135,6 +152,7 @@ export const products = [
     price: 1100,
     image: "img/products/img-8.png",
     count: 110,
+    category: "Fashion",
   },
   {
     id: "xfxjjgeyyyh19-xznjjfjhghhg-fjjufuu737835",
@@ -142,6 +160,7 @@ export const products = [
     price: 8034,
     image: "img/products/img-pro-03.jpg",
     count: 397,
+    category: "Fashion",
   },
   {
     id: "dhfhhxxhfhjjjj20-fhhfjjsssur-fhhhfbajrjk3874",
@@ -149,13 +168,15 @@ export const products = [
     price: 5005,
     image: "img/products/img-pro-04.jpg",
     count: 1542,
+    category: "Electronics",
   },
   {
     id: "dgreyywggaann21-sdhhfgkkbcbjcc-kkdhhgdg3667477",
-    name: "Plain Red Hood",
+    name: "Plain Red Hoodie",
     price: 3206,
     image: "img/products/men-cozy-fleece-zip-up-hoodie-red.jpg",
     count: 113,
+    category: "Fashion",
   },
   {
     id: "fggfjjjjfjjfj22-ddgdgdgffdjd-hfjjkkd883665",
@@ -163,6 +184,7 @@ export const products = [
     price: 2307,
     image: "img/products/men-golf-polo-t-shirt-blue.jpg",
     count: 1613,
+    category: "Fashion",
   },
   {
     id: "dhgggggdhjjjjjk23-jdjhhdgfffdmcgd-fgdfffffdbvh3",
@@ -170,6 +192,7 @@ export const products = [
     price: 2178,
     image: "img/products/our-img-1.png",
     count: 45,
+    category: "Sporting",
   },
   {
     id: "sfffhshhhshtfwnnh24-sdgdgddfsjjsks-sgdgghdy63773534",
@@ -177,5 +200,6 @@ export const products = [
     price: 8109,
     image: "img/products/product-5.jpg",
     count: 422,
+    category: "Electronics",
   },
 ];
