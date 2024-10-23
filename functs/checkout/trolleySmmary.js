@@ -7,6 +7,8 @@ import {
 import { products, getProduct } from "../../data/products.js";
 import { modifyCents } from "../utilities/currency.js";
 import { displayPaymentSummary } from "./paymentSummary.js";
+import { convertPrices } from "../utilities/currency.js";
+import { country_code } from "../utilities/country.js";
 
 export function displayTrolleySummary() {
   let trolleySummaryHTML = "";
@@ -37,9 +39,11 @@ export function displayTrolleySummary() {
         <div class="trolley-item-details">
           <div class="product-name">${matchingProduct.name}</div>
           <div class="price-div">
-            <div class="product-price"><span>@</span> $${modifyCents(
-              matchingProduct.price
-            )}</div>
+            <div id="product-price-${
+              matchingProduct.id
+            }" class="product-price"><span>@</span> $${modifyCents(
+      matchingProduct.price
+    )}</div>
             <div class="total-products-price">
               Subtotal :
               <span>$${modifyCents(
@@ -76,6 +80,24 @@ export function displayTrolleySummary() {
     </div>
     
   `;
+
+    // document.getElementById(
+    //   `product-price-${matchingProduct.id}`
+    // ).innerHTML = `<span>@</span> $${modifyCents(matchingProduct.price)}`;
+    //convert prices
+    trolley.forEach((trolleyItem) => {
+      const convertedPrice = trolleyItem.price * 1; //rate;
+      // let matchingCountry;
+      // country_code.forEach((country) => {
+      //   if (country.code === selectedCurrency) {
+      //     matchingCountry = country;
+      //   }
+      // });
+      // document.getElementById(
+      //   `product-price-${matchingProduct.id}`
+      // ).innerHTML = `<span>@</span> $${modifyCents(matchingProduct.price)}`;
+      // console.log("hello");
+    });
 
     //console.log(trolleyQuantity);
     //document.querySelector(".js-count").innerHTML = trolleyQuantity;
