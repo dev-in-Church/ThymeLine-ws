@@ -454,7 +454,6 @@ body {
 /**featured poducts*/
 .featured-products {
   padding-top: 20px;
-  margin-top: 200px;
 }
 
 .f-container {
@@ -477,6 +476,10 @@ body {
 @media (max-width: 1440px) {
   .f-container {
     grid-template-columns: repeat(6, 1fr);
+
+  }
+  .featured-products {
+    margin-top: 200px;
   }
 }
 
