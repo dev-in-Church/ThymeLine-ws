@@ -16,6 +16,11 @@
       href="assets/css/bootstrap.min.css"
     />
     <link rel="stylesheet" href="assets/css/owl-carousel.css" />
+    <link rel="stylesheet" href="assets/css/owl.theme.default.min.css" />
+    <!--link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"
+    /-->
     <link rel="stylesheet" type="text/css" href="assets/css/font-awesome.css" />
 
     <link rel="stylesheet" href="gen-styles.css" />
@@ -23,20 +28,6 @@
 
   <body>
     <section class="header">
-      <div class="top-header">
-        <div class="select-box">
-          <div class="cur">My Currency</div>
-          <img src="https://flagsapi.com/US/flat/64.png" />
-          <select>
-            <option value="USD">USD</option>
-            <option value="NPR">NPR</option>
-            <option value="INR">INR</option>
-            <option value="PKR">PKR</option>
-            <option value="MAD">MAD</option>
-            <option value="MAD">KES</option>
-          </select>
-        </div>
-      </div>
       <div id="header">
         <a href="index.html">
           <div class="logo-div">
@@ -50,8 +41,8 @@
 
         <div class="nav-div">
           <div id="navbar" class="js-navbar navbar-s">
-            <a href="home.html"><li>Home</li></a>
-            <a href="index.html"><li>Shop</li></a>
+            <a href="index.html"><li>Home</li></a>
+            <a href="shop.html"><li>Shop</li></a>
             <!--li><a href="blog.html">Blog</a></li-->
             <!--li><a href="about.html">About</a></li-->
             <!--li><a href="contact.html">Contact</a></li-->
@@ -81,6 +72,7 @@
         </div>
       </div>
     </section>
+
     <!--sidebarsssssss-->
     <div class="sidebar">
       <div class="s-bar-close-div">
@@ -117,7 +109,7 @@
 
       <div class="hero-float">
         <p>
-          Welcome to our online shopping haven, where comfort meets convenience and variety knows no bounds. Step into a world where you can explore an extensive selection of products, from the latest fashion trends to everyday essentials. Enjoy a seamless shopping experience with user-friendly navigation and quick, secure transactions. Discover the satisfaction of finding your treasures at the click of a button. Whether you’re looking for a special gift or treating yourself, our platform promises a delightful and memorable shopping journey.
+          Welcome to our online shopping haven, where comfort meets convenience and variety knows no bounds. Step into a world where you can explore an extensive selection of products, from the latest fashion trends to everyday essentials. Enjoy a seamless shopping experience with user-friendly navigation and quick, secure transactions. Discover the satisfaction of finding your treasures at the click of a button. Whether you’re looking for a special gift or treating yourself, our platform promises a delightful and memorable shopping journey.
         </p>
       </div>
     </section>
@@ -132,6 +124,10 @@
           <div class="col-lg-6">
             <div class="section-heading">
               <h2>Popular Caregories</h2>
+              <span
+                >Details to details is what makes ThymeLine different from the
+                other themes.</span
+              >
             </div>
           </div>
         </div>
@@ -140,13 +136,15 @@
         <div class="row">
           <div class="col-lg-12">
             <div class="categories-item-carousel">
-              <div class="owl-categories-item owl-carousel">
+              <div
+                id="popular-section"
+                class="owl-carousel owl-theme owl-categories-item"
+              >
                 <div class="item">
                   <!--img src="img/categories/fashion.jpe" alt="" /-->
 
                   <div class="categories-down-content">
                     <p>Fashion</p>
-                    
                   </div>
                 </div>
                 <div class="item">
@@ -154,7 +152,6 @@
 
                   <div class="categories-down-content">
                     <p>Food & Drinks</p>
-                   
                   </div>
                 </div>
                 <div class="item">
@@ -162,7 +159,6 @@
 
                   <div class="categories-down-content">
                     <p>Beauty</p>
-                    
                   </div>
                 </div>
                 <div class="item">
@@ -170,7 +166,6 @@
 
                   <div class="categories-down-content">
                     <p>Electronics</p>
-                    
                   </div>
                 </div>
                 <div class="item">
@@ -178,7 +173,6 @@
 
                   <div class="categories-down-content">
                     <p>Foodstuff</p>
-                   
                   </div>
                 </div>
                 <div class="item">
@@ -186,14 +180,12 @@
 
                   <div class="categories-down-content">
                     <p>Baby shop</p>
-                    
                   </div>
                 </div>
                 <div class="item">
                   <!--img src="img/categories/sporting.jpeg" alt="" /-->
                   <div class="categories-down-content">
                     <p>Sporting</p>
-                    
                   </div>
                 </div>
               </div>
@@ -210,233 +202,18 @@
         <div class="col-lg-6">
           <div class="section-heading">
             <h2>Latest on ThymeLine</h2>
-            <span>pop in for new products on ThymeLine</span
+            <span
+              >Details to details is what makes ThymeLine different from the
+              other themes.</span
             >
           </div>
         </div>
       </div>
       <div class="container latest-cont">
-        <div class="row">
-          <div class="col-lg-12">
-            <div class="men-item-carousel">
-              <div class="owl-men-item owl-carousel">
-                <div class="item">
-                  <div class="thumb">
-                    <div class="hover-content">
-                      <ul>
-                        <li>
-                          <a href="single-product.html"
-                            ><i class="fa fa-eye"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="single-product.html"
-                            ><i class="fa fa-star"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="single-product.html"
-                            ><i class="fa fa-shopping-cart"></i
-                          ></a>
-                        </li>
-                      </ul>
-                    </div>
-
-                    <div class="late-prod">
-                      <img src="img/products/basketball.png" alt="" />
-                    </div>
-                  </div>
-                  <div class="down-content">
-                    <h4>Basketball</h4>
-                    <ul class="stars">
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                    </ul>
-                    <span>$120.00</span>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="thumb">
-                    <div class="hover-content">
-                      <ul>
-                        <li>
-                          <a href="single-product.html"
-                            ><i class="fa fa-eye"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="single-product.html"
-                            ><i class="fa fa-star"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="single-product.html"
-                            ><i class="fa fa-shopping-cart"></i
-                          ></a>
-                        </li>
-                      </ul>
-                    </div>
-                    <img src="img/products/j9.png" alt="" />
-                  </div>
-                  <div class="down-content">
-                    <h4>Jordan 9</h4>
-                    <ul class="stars">
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                    </ul>
-                    <span>$120.00</span>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="thumb">
-                    <div class="hover-content">
-                      <ul>
-                        <li>
-                          <a href="single-product.html"
-                            ><i class="fa fa-eye"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="single-product.html"
-                            ><i class="fa fa-star"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="single-product.html"
-                            ><i class="fa fa-shopping-cart"></i
-                          ></a>
-                        </li>
-                      </ul>
-                    </div>
-                    <img src="img/products/laptop-img.png" alt="" />
-                  </div>
-                  <div class="down-content">
-                    <h4>Lenovo Notebook</h4>
-                    <ul class="stars">
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                    </ul>
-                    <span>$150.00</span>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="thumb">
-                    <div class="hover-content">
-                      <ul>
-                        <li>
-                          <a href="single-product.html"
-                            ><i class="fa fa-eye"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="single-product.html"
-                            ><i class="fa fa-star"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="single-product.html"
-                            ><i class="fa fa-shopping-cart"></i
-                          ></a>
-                        </li>
-                      </ul>
-                    </div>
-                    <img src="img/products/phone 6.png" alt="" />
-                  </div>
-                  <div class="down-content">
-                    <h4>Phone 32</h4>
-                    <ul class="stars">
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                    </ul>
-                    <span>$120.00</span>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="thumb">
-                    <div class="hover-content">
-                      <ul>
-                        <li>
-                          <a href="single-product.html"
-                            ><i class="fa fa-eye"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="single-product.html"
-                            ><i class="fa fa-star"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="single-product.html"
-                            ><i class="fa fa-shopping-cart"></i
-                          ></a>
-                        </li>
-                      </ul>
-                    </div>
-                    <img src="img/products/dress-shirt-img.png" alt="" />
-                  </div>
-                  <div class="down-content">
-                    <h4>Classic Shirt</h4>
-                    <ul class="stars">
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                    </ul>
-                    <span>$120.00</span>
-                  </div>
-                </div>
-                <div class="item">
-                  <div class="thumb">
-                    <div class="hover-content">
-                      <ul>
-                        <li>
-                          <a href="single-product.html"
-                            ><i class="fa fa-eye"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="single-product.html"
-                            ><i class="fa fa-star"></i
-                          ></a>
-                        </li>
-                        <li>
-                          <a href="single-product.html"
-                            ><i class="fa fa-shopping-cart"></i
-                          ></a>
-                        </li>
-                      </ul>
-                    </div>
-                    <img src="img/products/women-clothes-img.png" alt="" />
-                  </div>
-                  <div class="down-content">
-                    <h4>Women dress</h4>
-                    <ul class="stars">
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                      <li><i class="fa fa-star"></i></li>
-                    </ul>
-                    <span>$120.00</span>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+        <div
+          class="owl-carousel owl-theme latest-items"
+          id="latest-carousel"
+        ></div>
       </div>
     </section>
     <!-- ***** latest products Ends ***** -->
@@ -448,272 +225,14 @@
             <div class="section-heading">
               <h2>Featured Products</h2>
               <span
-                ></span
+                >Details to details is what makes ThymeLine different from the
+                other themes.</span
               >
             </div>
           </div>
         </div>
       </div>
-      <div class="f-container">
-        <div class="products-single">
-          <div class="f-img-div">
-            <img src="img/products/basketball.png" class="f-img" alt="Image" />
-            <div class="mask-icon">
-              <ul>
-                <li>
-                  <a
-                    href="#"
-                    data-toggle="tooltip"
-                    data-placement="right"
-                    title="View"
-                    ><i class="fa fa-eye"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    data-toggle="tooltip"
-                    data-placement="right"
-                    title="Compare"
-                    ><i class="fa fa-shopping-cart"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    data-toggle="tooltip"
-                    data-placement="right"
-                    title="Add to Wishlist"
-                    ><i class="fa fa-heart"></i
-                  ></a>
-                </li>
-              </ul>
-              <a class="cart" href="#">Add to Trolley</a>
-            </div>
-          </div>
-          <div class="dwn-text">
-            <h4>Basketball</h4>
-            <h5>$7.79</h5>
-          </div>
-        </div>
-        <div class="products-single">
-          <div class="f-img-div">
-            <img
-              src="img/products/round-sunglasses-black.jpg"
-              class="f-img"
-              alt="Image"
-            />
-            <div class="mask-icon">
-              <ul>
-                <li>
-                  <a
-                    href="#"
-                    data-toggle="tooltip"
-                    data-placement="right"
-                    title="View"
-                    ><i class="fa fa-eye"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    data-toggle="tooltip"
-                    data-placement="right"
-                    title="Compare"
-                    ><i class="fa fa-shopping-cart"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    data-toggle="tooltip"
-                    data-placement="right"
-                    title="Add to Wishlist"
-                    ><i class="fa fa-heart"></i
-                  ></a>
-                </li>
-              </ul>
-              <a class="cart" href="#">Add to Trolley</a>
-            </div>
-          </div>
-          <div class="dwn-text">
-            <h4>Sunglass</h4>
-            <h5>$7.79</h5>
-          </div>
-        </div>
-        <div class="products-single">
-          <div class="f-img-div">
-            <img src="img/products/t-shirt.png" class="f-img" alt="Image" />
-            <div class="mask-icon">
-              <ul>
-                <li>
-                  <a
-                    href="#"
-                    data-toggle="tooltip"
-                    data-placement="right"
-                    title="View"
-                    ><i class="fa fa-eye"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    data-toggle="tooltip"
-                    data-placement="right"
-                    title="Compare"
-                    ><i class="fa fa-shopping-cart"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    data-toggle="tooltip"
-                    data-placement="right"
-                    title="Add to Wishlist"
-                    ><i class="fa fa-heart"></i
-                  ></a>
-                </li>
-              </ul>
-              <a class="cart" href="#">Add to Trolley</a>
-            </div>
-          </div>
-          <div class="dwn-text">
-            <h4>Tshirt</h4>
-            <h5>$7.79</h5>
-          </div>
-        </div>
-        <div class="products-single">
-          <div class="f-img-div">
-            <img
-              src="img/products/plain-hooded-fleece-sweatshirt-yellow.jpg"
-              class="f-img"
-              alt="Image"
-            />
-            <div class="mask-icon">
-              <ul>
-                <li>
-                  <a
-                    href="#"
-                    data-toggle="tooltip"
-                    data-placement="right"
-                    title="View"
-                    ><i class="fa fa-eye"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    data-toggle="tooltip"
-                    data-placement="right"
-                    title="Compare"
-                    ><i class="fa fa-shopping-cart"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    data-toggle="tooltip"
-                    data-placement="right"
-                    title="Add to Wishlist"
-                    ><i class="fa fa-heart"></i
-                  ></a>
-                </li>
-              </ul>
-              <a class="cart" href="#">Add to Trolley</a>
-            </div>
-          </div>
-          <div class="dwn-text">
-            <h4>Yellow Hoodie</h4>
-            <h5>$7.79</h5>
-          </div>
-        </div>
-        <div class="products-single">
-          <div class="f-img-div">
-            <img
-              src="img/products/men-cozy-fleece-zip-up-hoodie-red.jpg"
-              class="f-img"
-              alt="Image"
-            />
-            <div class="mask-icon">
-              <ul>
-                <li>
-                  <a
-                    href="#"
-                    data-toggle="tooltip"
-                    data-placement="right"
-                    title="View"
-                    ><i class="fa fa-eye"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    data-toggle="tooltip"
-                    data-placement="right"
-                    title="Compare"
-                    ><i class="fa fa-shopping-cart"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    data-toggle="tooltip"
-                    data-placement="right"
-                    title="Add to Wishlist"
-                    ><i class="fa fa-heart"></i
-                  ></a>
-                </li>
-              </ul>
-              <a class="cart" href="#">Add to Trolley</a>
-            </div>
-          </div>
-          <div class="dwn-text">
-            <h4>Red Hoodie</h4>
-            <h5>$7.79</h5>
-          </div>
-        </div>
-        <div class="products-single">
-          <div class="f-img-div">
-            <img src="img/products/backpack.jpg" class="f-img" alt="Image" />
-            <div class="mask-icon">
-              <ul>
-                <li>
-                  <a
-                    href="#"
-                    data-toggle="tooltip"
-                    data-placement="right"
-                    title="View"
-                    ><i class="fa fa-eye"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    data-toggle="tooltip"
-                    data-placement="right"
-                    title="Compare"
-                    ><i class="fa fa-shopping-cart"></i
-                  ></a>
-                </li>
-                <li>
-                  <a
-                    href="#"
-                    data-toggle="tooltip"
-                    data-placement="right"
-                    title="Add to Wishlist"
-                    ><i class="fa fa-heart"></i
-                  ></a>
-                </li>
-              </ul>
-              <a class="cart" href="#">Add to Trolley</a>
-            </div>
-          </div>
-          <div class="dwn-text">
-            <h4>Backpack</h4>
-            <h5>$7.79</h5>
-          </div>
-        </div>
-      </div>
+      <div class="f-container"></div>
     </section>
 
     <!--footer-->
@@ -731,6 +250,14 @@
               <li><a href="#">ThymeLine@company.com</a></li>
               <li><a href="#">079-519-8141</a></li>
             </ul>
+          </div>
+          <div class="colmn">
+            <h4>Download Our App</h4>
+            <p>Download App for Android and ios mobile phone.</p>
+            <div class="app-logo">
+              <img src="img/play-store.png" alt="" />
+              <img src="img/app-store.png" alt="" />
+            </div>
           </div>
           <div class="colmn">
             <h4>Shopping &amp; Categories</h4>
@@ -756,6 +283,15 @@
               <li><a href="#">FAQ's</a></li>
               <li><a href="#">Shipping</a></li>
               <li><a href="#">Tracking ID</a></li>
+            </ul>
+          </div>
+          <div class="colmn">
+            <h4>Follow us</h4>
+            <ul>
+              <li><a href="#">Facebook</a></li>
+              <li><a href="#">X.com</a></li>
+              <li><a href="#">Instagram</a></li>
+              <li><a href="#">YouTube</a></li>
             </ul>
           </div>
         </div>
@@ -787,7 +323,7 @@
     <div class="loader"></div>
 
     <!-- jQuery -->
-    <script src="assets/js/jquery-2.1.0.min.js"></script>
+    <script src="assets/js/jquery_3.7.1.js"></script>
 
     <!-- Plugins -->
     <script src="assets/js/owl-carousel.js"></script>

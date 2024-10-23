@@ -1884,6 +1884,46 @@ Men
 
 /**latt*/
 
+/*page-loader*/
+.loader {
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #ffffff;
+  transition: opacity 0.75s, visibility 0.75s;
+}
+
+.loader-hidden {
+  opacity: 0;
+  visibility: hidden;
+}
+
+.loader::after {
+  content: "";
+  width: 75px;
+  height: 75px;
+  border: 5px solid #dddddd;
+  border-top-color: #520e3e;
+  border-bottom-color: #520e3e;
+  border-radius: 50%;
+  animation: loading 0.95s ease infinite;
+}
+
+@keyframes loading {
+  from {
+    transform: rotate(0turn);
+  }
+
+  to {
+    transform: rotate(1turn);
+  }
+}
 
 /*currency converter*/
 .select-box {
@@ -1942,46 +1982,3 @@ Men
 }
 
 /**again owl carousel*/
-
-
-
-/*page-loader*/
-.loader {
-  position: fixed;
-  z-index: 999;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  background: #ffffff;
-  transition: opacity 0.75s, visibility 0.75s;
-}
-
-.loader-hidden {
-  opacity: 0;
-  visibility: hidden;
-}
-
-.loader::after {
-  content: "";
-  width: 75px;
-  height: 75px;
-  border: 5px solid #dddddd;
-  border-top-color: #520e3e;
-  border-bottom-color: #520e3e;
-  border-radius: 50%;
-  animation: loading 0.95s ease infinite;
-}
-
-@keyframes loading {
-  from {
-    transform: rotate(0turn);
-  }
-
-  to {
-    transform: rotate(1turn);
-  }
-}

@@ -9,47 +9,81 @@
     <link rel="stylesheet" href="gen-styles.css" />
   </head>
   <body>
-    <section id="header">
-      <a href="index.html">
-        <div class="logo-div">
+    <section class="header shop-header">
+      <div class="top-header">
+        <div class="select-box">
+          <div class="cur">My Currency</div>
+          <div id="select-flag"></div>
+          <!--img src="https://flagsapi.com/KE/flat/64.png" /-->
+
+          <select class="curr-sel" id="currency-selector">
+            <!-- Add more currencies as needed -->
+          </select>
+        </div>
+      </div>
+      <div id="header">
+        <a href="index.html">
+          <div class="logo-div">
+            <img
+              src="img/WhatsApp_Image_2024-10-01_at_22.05.25_6efd6e13-removebg-preview.png"
+              alt=""
+              class="logo"
+            />
+          </div>
+        </a>
+
+        <div class="search-div">
+          <input id="searchBar" type="text" placeholder="Search Items " />
           <img
-            src="img/WhatsApp_Image_2024-10-01_at_22.05.25_6efd6e13-removebg-preview.png"
+            id="search-icon"
+            class="search-icon"
+            src="img/icons/search.svg"
             alt=""
-            class="logo"
           />
         </div>
-      </a>
+        <div class="nav-div">
+          <div id="navbar" class="js-navbar navbar-s">
+            <a href="index.html"><li>Home</li></a>
+            <a href="shop.html"><li>Shop</li></a>
+            <!--li><a href="blog.html">Blog</a></li-->
+            <!--li><a href="about.html">About</a></li-->
+            <!--li><a href="contact.html">Contact</a></li-->
+            <a class="active" href="checkout.html">
+              <li>
+                <!--a href="trolley.html"-->
+                <div class="trolley-div">
+                  Trolley
+                  <img
+                    src="img/icons/trolley-outline.svg"
+                    class="trolley-img"
+                    alt=""
+                  />
+                  <div class="count js-count">0</div>
+                </div>
+                <!--/a-->
+              </li>
+            </a>
+          </div>
+          <div class="far-imgs">
+            <a href="#" class="qrcode-img"><i class="fa fa-qrcode"></i></a>
+            <!--a href="#" class="qrcode-img"><i class="fa fa-barcode"></i></a-->
 
-      <div class="nav-div">
-        <div id="navbar" class="js-navbar navbar-s">
-          <a href="index.html"><li>Home</li></a>
-          <a href="shop.html"><li>Shop</li></a>
-          <!--li><a href="blog.html">Blog</a></li-->
-          <!--li><a href="about.html">About</a></li-->
-          <!--li><a href="contact.html">Contact</a></li-->
-          <a class="active" href="checkout.html">
-            <li>
-              <!--a href="trolley.html"-->
-              <div class="trolley-div">
-                Trolley
-                <img
-                  src="img/icons/trolley-outline.svg"
-                  class="trolley-img"
-                  alt=""
-                />
-                <div class="count js-count">0</div>
-              </div>
-              <!--/a-->
-            </li>
-          </a>
+            <!--img src="img/icons/qr-code-sharp.svg" class="qrcode-img" /-->
+            <img src="img/icons/menu.png" class="menu-icon js-menu-icon" />
+          </div>
         </div>
-        <div class="far-imgs">
-          <a href="#" class="qrcode-img"><i class="fa fa-qrcode"></i></a>
-          <!--a href="#" class="qrcode-img"><i class="fa fa-barcode"></i></a-->
-
-          <!--img src="img/icons/qr-code-sharp.svg" class="qrcode-img" /-->
-          <img src="img/icons/menu.png" class="menu-icon js-menu-icon" />
-        </div>
+      </div>
+      <div class="lower-div">
+        <!-- Category Filter Dropdown -->
+        <select id="categoryFilter">
+          <option value="all">All Categories</option>
+          <option value="Electronics">Electronics</option>
+          <option value="Fashion">Fashion</option>
+          <option value="Household">Household</option>
+          <option value="Sporting">Sporting</option>
+          <option value="Food">Food</option>
+          <option value="Furniture">Furniture</option>
+        </select>
       </div>
     </section>
 
@@ -62,10 +96,11 @@
     </div>
     <!--sidebarsssssss end-->
 
-    <section class="productsList js-productsList"></section>
+    <section id="productList" class="productsList js-productsList"></section>
 
     <div class="loader"></div>
 
     <script type="module" src="functs/shop.js"></script>
+    <script></script>
   </body>
 </html>
