@@ -3,7 +3,6 @@ import {
   toggleMenu,
   toggleSidebar,
   owlCarouselFunc,
-  owlCarouselFunc2,
   pageLoader,
 } from "./app.js";
 import { renderHistoryHTML } from "../data/qrSummary.js";
